@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/informations_view"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="5pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/photo_view"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/nom_produit"
+            android:text="@string/nom_produit_label"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/nom_produit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/type_alcool"
+            android:text="@string/type_alcool_label"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/type_alcool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/pays_origine"
+            android:text="@string/pays_origine_label"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/pays_origine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/producteur"
+            android:text="@string/producteur_label"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/producteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enregistrer_vin" />
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo_view"
+        app:layout_constraintStart_toEndOf="@id/informations_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/vin_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/ic_baseline_wine_bar_24"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/vin_camera"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_vin" />
+
+        <ImageButton
+            android:id="@+id/vin_camera"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vin_photo"
+            android:contentDescription="@string/bouton_camera" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Resto-vin</string>
+    <string name="producteur_label">Producteur</string>
+    <string name="pays_origine_label">Pays d\'origine</string>
+    <string name="type_alcool_label">Type d\'alcool</string>
+    <string name="nom_produit_label">Nom du produit</string>
+    <string name="demo_produit_label">Demo produit</string>
+    <string name="enregistrer_vin">Enregistrer</string>
+    <string name="supprimer_vin">Supprimer un vin</string>
+    <string name="partager_vin">Partager un vin</string>
+    <string name="ajouter_vin">Ajouter un vin</string>
+    <string name="bouton_camera">Bouton camera</string>
+    <string name="image_vin">Image du vin</string>
+    <string name="supprimer_dialog_titre">Supprimer</string>
+    <string name="supprimer_dialog_message">Êtes-vous sûre?</string>
+    <string name="supprimer_dialog_positif">Oui</string>
+    <string name="supprimer_dialog_negatif">Annuler</string>
+    <string name="recherche_label">Recherche : </string>
+</resources>
